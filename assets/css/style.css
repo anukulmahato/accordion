@@ -1,0 +1,43 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: poppins;
+}
+body {
+  background-color: #e9e9e9;
+}
+
+.anu-accordion {
+  width: 600px;
+  margin: 200px auto 0px;
+}
+.anu-accordion .accordion-item {
+  background-color: #fff;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.anu-accordion .accordion-item .accordion-header {
+  padding: 15px 20px;
+  border-bottom: 1px solid #e9e9e9;
+  cursor: pointer;
+  position: relative;
+}
+.anu-accordion .accordion-item .accordion-header::after {
+  content: "\2192";
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  font-size: 30px;
+  transition: 0.3s;
+}
+.anu-accordion .accordion-item .accordion-header.active::after {
+  transform: rotate(90deg);
+}
+.anu-accordion .accordion-item .accordion-body {
+  height: 0;
+  overflow: hidden;
+  transition: 0.3s;
+}
+.anu-accordion .accordion-item .accordion-body .accordion-content {
+  padding: 15px 20px;
+}
